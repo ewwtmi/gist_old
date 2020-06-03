@@ -1,0 +1,27 @@
+#page {
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+}
+
+#wrapper {
+    position: relative;
+    height: 1200px; /*表示確認用*/
+}
+
+.shopCommonLink {
+    background-color: #ccc;
+}
+
+.shopCommonFooter {
+    background-color: #fcc;
+}
+
+.btnPagetop {
+    display: block;
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fc0;
+}

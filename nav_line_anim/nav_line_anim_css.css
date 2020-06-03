@@ -1,0 +1,79 @@
+/* ------------------------------------
+	* sample
+* ------------------------------------ */
+body {
+	background-color: #eeeeee;
+}
+
+.wrp-contents {
+	padding: 50px 0;
+}
+
+.wrp-contents .inner_contents {
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #cccccc;
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 900px;
+}
+
+/* ------------------------------------
+	* navigation
+* ------------------------------------ */
+.wrp-lnav {
+	border-bottom: 1px solid #dddddd;
+	line-height: 1;
+	margin: 0 auto;
+	width: 800px;
+}
+
+.wrp-lnav .list_lnav {
+	display: table;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+
+.wrp-lnav .list_lnav li {
+	font-size: 24px;
+
+	display: table-cell;
+	font-family: "Passion One", sans-serif;
+	font-weight: 700;
+	height: 70px;
+	letter-spacing: 0.03em;
+}
+
+.wrp-lnav .list_lnav li a {
+	color: #666666;
+	display: table-cell;
+	height: 70px;
+	vertical-align: middle;
+}
+
+.wrp-lnav .list_lnav li a:hover {
+	color: #000000;
+}
+
+.wrp-lnav .list_lnav li span {
+	display: block;
+	padding: 0 20px;
+}
+
+.wrp-lnav .list_lnav li span br {
+	display: none;
+}
+
+.wrp-lnav .list_lnav li.act a {
+	color: #000000;
+}
+
+.wrp-lnav .list_lnav .line {
+	background-color: #ff6600;
+	bottom: -1px;
+	display: block;
+	height: 3px;
+	left: 0;
+	position: absolute;
+}

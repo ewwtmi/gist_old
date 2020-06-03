@@ -1,0 +1,25 @@
+/* ------------------------------------
+アルファをかける
+ただしDXフィルターはサポートされなくなったようなので注意  
+http://msdn.microsoft.com/ja-jp/library/ie/hh801215(v=vs.85).aspx
+------------------------------------ */
+/* 基本 */
+.alpha a:hover {
+  opacity:0.6;
+  filter:alpha(opacity=60);
+  -ms-filter:"alpha(opacity=60)";
+}
+
+/*画像には*/
+.image{
+  filter:alpha(opacity=50);  /* IE7以下用 */
+  -ms-filter: "alpha(opacity=50)"; /* IE8用 */
+  opacity: 0.5; /* Firefox 1.5以上, Opera, Safari用 */
+}
+
+/*子要素にまで透明度を反映させたくない場合は*/
+.child {
+  background-color: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66000000,EndColorStr=#66000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66000000,EndColorStr=#66000000)";
+}

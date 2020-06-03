@@ -1,0 +1,17 @@
+/* ------------------------------------
+transition
+nameの値はプロパティと揃える
+------------------------------------ */
+
+XXXXX {
+  height: 0;
+  -moz-transition: height .5s linear;
+  -webkit-transition: height .5s linear;
+  transition: height .5s linear;
+}
+XXXXX {
+  height: 385px;
+  -moz-transition: height .5s linear;
+  -webkit-transition: height .5s linear;
+  transition: height .5s linear;
+}

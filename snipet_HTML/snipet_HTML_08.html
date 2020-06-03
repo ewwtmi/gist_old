@@ -1,0 +1,49 @@
+<!-- =================================
+条件付きコメント
+
+バリデータにも通るので便利だけど、多用は避ける  
+IE10からは廃止決定  
+http://news.mynavi.jp/news/2011/07/22/020/index.html
+
+長所：
+CSSハックを使用していないので、Validatorではvalidと判断される  
+独特なCSSハックの記述方法を覚える必要なし
+
+短所：
+head要素の中に多くの記述が入る事になるので、SEO的にはあまり良くない  
+ページの更新が入った時、複数のCSSファイルを編集する必要があり
+
+参考：  
+http://ja.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88  
+http://coliss.com/articles/build-websites/operation/css/safe-css-hacks-by-mathiasbynens.html  
+http://coliss.com/articles/build-websites/operation/css/css-conditional-comments-block-downloads.html
+================================== -->
+
+
+<!--IE全般-->
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="ie.css" />
+<![endif]-->
+
+<!--バージョンごと-->
+<!--[if IE 6]> →IE6のみ -->
+<!--[if gt IE 6]> →IE7以上 -->
+<!--[if lt IE 6]> →IE6未満 -->
+<!--[if gte IE 6]> →IE6以上 -->
+<!--[if lte IE 6]> →IE6以下 -->
+
+<!--これならセレクタひとつ増やすだけで対応可能-->
+<body>
+<!--[if IE 9 ]>
+<body class="ie9">
+<![endif]-->
+<!--[if IE 8 ]>
+<body class="ie8">
+<![endif]-->
+<!--[if IE 7 ]>
+<body class="ie7">
+<![endif]-->
+<!--[if IE 6 ]>
+<body class="ie6">
+<![endif]-->
+</body>

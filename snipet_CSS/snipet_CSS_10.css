@@ -1,0 +1,21 @@
+/* ------------------------------------
+display: table;をIE6～7でも実装
+万能ではないので対処できないケースもある
+参考：
+http://bashalog.c-brains.jp/13/04/08-111325.php  
+http://qiita.com/devdyaya/items/2c16617d685e2ccc7d70
+------------------------------------ */
+
+XXXXX {
+  display: table-cell;
+  vertical-align: middle;
+  height: 88px;
+}
+*:first-child+html XXXXX { /* IE7 Hack */
+  display: block;
+  layout-grid-line: 88px;
+}
+* html XXXXX { /* IE6 Hack */
+  display: block;
+  layout-grid-line: 88px;
+}

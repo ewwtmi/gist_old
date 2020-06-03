@@ -1,0 +1,47 @@
+#sample {
+    padding: 20px;
+    font-size: 12px;
+    background-color: #eee;
+    height: 400px; /*表示確認用*/
+}
+
+/* micro clearfix */
+.cx:before,
+.cx:after {
+    content: '';
+    display: table;
+}
+.cx:after {
+    clear: both;
+}
+.cx {
+    zoom: 1;
+}
+
+.boxTabChange {
+    background-color: #fff;
+}
+
+.tabBtnList li {
+    list-style: none;
+    float: left;
+    padding-right: 5px;
+}
+.tabBtnList li a {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.boxTabBlock {
+    padding: 10px;
+}
+#tab1 {
+    background-color: #fc0;
+}
+#tab2 {
+    background-color: #fcc;
+}
+#tab3 {
+    background-color: #cff;
+}

@@ -1,0 +1,11 @@
+/* ------------------------------------
+チェックボックス、ラジオボタンのサイズを変更する
+スマホ対応の時など。やりすぎるとズレ調整が大変なので、ほどほどに。
+------------------------------------ */
+
+.contact_form input[type="text"],
+.contact_form input[type="radio"] {
+  -moz-transform: scale(1.6,1.6);
+  -webkit-transform: scale(1.6,1.6);
+  transform: scale(1.6,1.6);
+}

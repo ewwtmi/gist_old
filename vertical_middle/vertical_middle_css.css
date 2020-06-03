@@ -1,0 +1,86 @@
+/* ------------------------------------
+contents
+* ------------------------------------ */
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 650px; /* この数値を超えるとスクロールバー表示。それまでは中央寄せキープ */
+    display: table;
+}
+
+.wrp-contents {
+    padding-top: 60px;
+    background-color: #eee;
+}
+
+/* タテヨコ中央寄せにする場合
+----------------------------------- */
+body.centerfix {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 100px; /* ヘッダー高さと同じにする */
+}
+body.centerfix .wrp-contents {
+    padding-top: 0;
+}
+
+/* ------------------------------------
+HEADER
+* ------------------------------------ */
+.wrp-header {
+    height: 100px; /* ヘッダー高さの設定 */
+    background-color: #132849;
+}
+.wrp-header .box-logo {
+    padding-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+/* タテヨコ中央寄せにする場合
+----------------------------------- */
+body.centerfix .wrp-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* ------------------------------------
+FOOTER
+* ------------------------------------ */
+.wrp-footer {
+    margin-top: 25px;
+    background-color: #eee;
+}
+.wrp-footer .txt-info {
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    color: #483f3c;
+}
+.wrp-footer .txt-info .company {
+    font-weight: bold;
+    color: #231815;
+}
+.wrp-footer .info-en {
+    margin-top: 5px;
+    color: #3e3a39;
+}
+
+/* ------------------------------------
+サンプル用調整
+* ------------------------------------ */
+.wrp-top-mainarea {
+    text-align: center;
+}
+.wrp-top-mainarea .txt-soon {
+    font-size: 24px;
+}
+.wrp-top-mainarea .ttl-main {
+    font-size: 40px;
+}
+.wrp-top-mainarea .txt-download {
+    font-size: 14px;
+    line-height: 1.6;
+}

@@ -1,0 +1,39 @@
+input, select, textarea, label {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    color: inherit;
+    vertical-align: baseline;
+}
+
+#sample {
+    padding: 30px;
+    height: 500px;
+}
+#sample .setting {
+    padding: 20px;
+    background-color: #eee;
+}
+
+.labelCheck {
+    display: block;
+    cursor: pointer;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(check_off.png);
+    margin-top: 10px;
+    padding-left: 30px;
+    line-height: 21px;
+    position: relative;
+    overflow: hidden;
+}
+.labelCheck.active {
+    background-image: url(check_on.png);
+}
+
+.labelCheck .inputCheck {
+    margin: 0;
+    position: absolute;
+    left: -100%; /*画像置換と同じ方法で、見えないところへ飛ばす*/
+}

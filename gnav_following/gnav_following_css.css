@@ -1,0 +1,23 @@
+#page {
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+}
+
+.header {
+    height: 170px;
+}
+
+.shopGlobalNav {
+    background-color: #fc0;
+    position: relative;
+    height: 40px;
+    top: 0;
+    width: 100%;
+    z-index: 500; /*必要に応じて。あまり高くしすぎないほうがいいかも*/
+}
+
+#wrapper {
+    position: relative;
+    height: 800px; /*表示確認用*/
+}
